@@ -1,0 +1,11 @@
+# rubocop:disable Style/Encoding
+# encoding: utf-8
+# rubocop:enable Style/Encoding
+# frozen_string_literal: true
+
+create_table "cats", force: :cascade do |t|
+  t.string "name", null: false
+  t.integer "age", null: false
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end

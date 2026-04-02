@@ -13,6 +13,8 @@ postinstall = "lefthook install"
 
 [tasks]
 rubocop = "docker compose exec app bundle exec rubocop"
+bundle_install = "docker compose run --rm app bundle install"
+migrate = "docker compose run --rm app bundle exec rails db:migrate"
 
 [env]
 DB_HOST = "localhost"
